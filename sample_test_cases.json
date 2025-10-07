@@ -1,0 +1,43 @@
+[
+  {
+    "id": "Q1",
+    "question": "How do I reset my password?"
+  },
+  {
+    "id": "Q2",
+    "question": "What's the difference between the Pro and Enterprise plans?"
+  },
+  {
+    "id": "Q3",
+    "question": "I'm experiencing slow performance. What should I do?"
+  },
+  {
+    "id": "Q4",
+    "question": "Can I integrate your service with third-party tools?"
+  },
+  {
+    "id": "Q5",
+    "question": "What are your data security and privacy practices?"
+  },
+  {
+    "id": "Q6",
+    "question": "How do I cancel my subscription?"
+  },
+  {
+    "id": "Q7",
+    "question": "What kind of customer support do you offer?"
+  },
+  {
+    "id": "Q8",
+    "question": "Can I export my data to another format?"
+  },
+  {
+    "id": "Q9",
+    "question": "What are the system requirements for your software?"
+  },
+  {
+    "id": "Q10",
+    "question": "Do you offer training or onboarding for new users?"
+  }
+]
+
