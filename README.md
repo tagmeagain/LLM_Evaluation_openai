@@ -2,6 +2,15 @@
 
 A comprehensive evaluation framework for comparing base GPT models with fine-tuned versions using advanced, multi-dimensional metrics suitable for CXO presentations.
 
+## 🎯 Two Powerful Frameworks in One
+
+This repository includes **two complementary evaluation approaches**:
+
+1. **Custom Framework** (`model_evaluator.py`) - Advanced metrics with statistical validation and CXO visualizations
+2. **DeepEval Integration** (`deepeval_conversational.py`) - Industry-standard framework with 14+ metrics and Confident AI dashboard
+
+Choose the approach that fits your needs, or use both for comprehensive evaluation!
+
 ## 📊 Overview
 
 This framework provides **10+ advanced metrics** across 4 key categories to scientifically evaluate and compare model performance:
@@ -154,6 +163,70 @@ python example_evaluation.py
 - P-value < 0.05 = statistically significant improvement
 - **Use Case**: Prove improvements are real, not random chance
 - **CXO Insight**: "8 out of 10 improvements are statistically significant (p<0.05)"
+
+## 🚀 DeepEval Integration (Alternative Approach)
+
+For conversational evaluation and cloud dashboards, use **DeepEval**:
+
+### Quick Start with DeepEval
+
+```bash
+# Install DeepEval
+pip install -r requirements_deepeval.txt
+
+# Run conversational evaluation
+python run_deepeval.py \
+  --base-model gpt-4o-mini \
+  --finetuned-model ft:gpt-4o-mini:org:name:id \
+  --system-prompt "Your system prompt" \
+  --test-data conversational_test_data.json \
+  --mode both
+```
+
+### Features
+
+- ✅ **14+ Built-in Metrics**: GEval, Answer Relevancy, Faithfulness, Toxicity, Bias, etc.
+- ✅ **Conversational Support**: Native multi-turn conversation evaluation
+- ✅ **Confident AI Dashboard**: Cloud-based visualization and tracking
+- ✅ **Pytest Integration**: CI/CD ready with `deepeval test run`
+
+### Pytest Example
+
+```bash
+# Run tests with DeepEval
+deepeval test run test_deepeval_comparison.py
+
+# Run in parallel
+deepeval test run test_deepeval_comparison.py -n 4
+
+# View results in Confident AI dashboard
+deepeval login  # Login once
+# Results auto-sync to dashboard!
+```
+
+### Documentation
+
+See **[DEEPEVAL_GUIDE.md](DEEPEVAL_GUIDE.md)** for complete documentation on:
+- Single-turn vs multi-turn evaluation
+- All available metrics and thresholds
+- Confident AI dashboard setup
+- Custom metrics with GEval
+- Best practices
+
+### When to Use DeepEval vs Custom Framework?
+
+| Use Case | Recommended Framework |
+|----------|----------------------|
+| **Conversational data** | ✅ DeepEval |
+| **Statistical validation (p-values)** | ✅ Custom Framework |
+| **CXO presentations** | ✅ Custom Framework |
+| **Cloud dashboards** | ✅ DeepEval |
+| **CI/CD integration** | ✅ DeepEval |
+| **Semantic similarity analysis** | ✅ Custom Framework |
+| **Quick setup** | ✅ DeepEval |
+| **Comprehensive evaluation** | ✅ Use Both! |
+
+---
 
 ## 📁 Output Structure
 
