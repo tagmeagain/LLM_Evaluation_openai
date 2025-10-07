@@ -34,6 +34,7 @@ evaluation_results/
 *.html
 *.png
 !sample_test_cases.json
+!conversational_test_data.json
 
 # Jupyter Notebook
 .ipynb_checkpoints

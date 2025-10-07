@@ -1,0 +1,123 @@
+{
+  "single_turn_cases": [
+    {
+      "id": "Q1",
+      "input": "How do I reset my password?",
+      "expected_output": "You can reset your password by clicking the 'Forgot Password' link on the login page."
+    },
+    {
+      "id": "Q2",
+      "input": "What's the difference between Pro and Enterprise plans?",
+      "expected_output": "Enterprise plans include priority support, advanced analytics, and unlimited users."
+    },
+    {
+      "id": "Q3",
+      "input": "I'm experiencing slow performance. What should I do?",
+      "expected_output": "Try clearing your cache, checking your internet connection, or contacting our support team for assistance."
+    },
+    {
+      "id": "Q4",
+      "input": "Can I integrate your service with third-party tools?",
+      "expected_output": "Yes, we offer API access and integrations with popular tools like Slack, Salesforce, and Zapier."
+    },
+    {
+      "id": "Q5",
+      "input": "What are your data security practices?",
+      "expected_output": "We use AES-256 encryption, SOC 2 compliance, and regular security audits to protect your data."
+    }
+  ],
+  
+  "multi_turn_conversations": [
+    {
+      "id": "CONV1",
+      "description": "Order return inquiry",
+      "turns": [
+        {
+          "user": "Hi, I need help with my order",
+          "expected_assistant": "I'd be happy to help you with your order. Could you please provide your order number?"
+        },
+        {
+          "user": "It's order number 12345",
+          "expected_assistant": "Thank you. I can see your order. What assistance do you need with it?"
+        },
+        {
+          "user": "I want to return it",
+          "expected_assistant": "I understand you'd like to return your order. We offer a 30-day return policy. I can initiate the return process for you."
+        }
+      ]
+    },
+    {
+      "id": "CONV2",
+      "description": "Payment method inquiry",
+      "turns": [
+        {
+          "user": "What payment methods do you accept?",
+          "expected_assistant": "We accept credit cards (Visa, Mastercard, Amex), debit cards, PayPal, and bank transfers."
+        },
+        {
+          "user": "Do you accept PayPal?",
+          "expected_assistant": "Yes, we do accept PayPal as a payment method."
+        },
+        {
+          "user": "Great, how do I add it to my account?",
+          "expected_assistant": "To add PayPal to your account, go to Settings > Payment Methods > Add Payment Method, then select PayPal and follow the connection steps."
+        }
+      ]
+    },
+    {
+      "id": "CONV3",
+      "description": "Subscription upgrade",
+      "turns": [
+        {
+          "user": "I want to upgrade my plan",
+          "expected_assistant": "I can help you upgrade your plan. What plan are you currently on, and which plan would you like to upgrade to?"
+        },
+        {
+          "user": "I'm on Basic and want to upgrade to Pro",
+          "expected_assistant": "Great choice! The Pro plan includes advanced features and costs $49/month. Would you like to proceed with the upgrade?"
+        },
+        {
+          "user": "Yes, when does it take effect?",
+          "expected_assistant": "Your upgrade will take effect immediately, and you'll be prorated for the remainder of your current billing cycle."
+        }
+      ]
+    },
+    {
+      "id": "CONV4",
+      "description": "Technical support escalation",
+      "turns": [
+        {
+          "user": "My dashboard isn't loading",
+          "expected_assistant": "I'm sorry you're experiencing this issue. Let me help troubleshoot. Have you tried clearing your browser cache and cookies?"
+        },
+        {
+          "user": "Yes, I tried that already",
+          "expected_assistant": "Thank you for trying that. Can you tell me which browser you're using and if you're seeing any error messages?"
+        },
+        {
+          "user": "Chrome, and it just shows a blank page",
+          "expected_assistant": "I understand. This seems to require further investigation. I'm going to escalate this to our technical team who will reach out to you within 2 hours."
+        }
+      ]
+    },
+    {
+      "id": "CONV5",
+      "description": "Feature inquiry and demo request",
+      "turns": [
+        {
+          "user": "Does your platform have analytics features?",
+          "expected_assistant": "Yes! We offer comprehensive analytics including real-time dashboards, custom reports, and data export capabilities."
+        },
+        {
+          "user": "Can I see a demo of the analytics?",
+          "expected_assistant": "Absolutely! I can schedule a personalized demo with our product specialist. What day and time works best for you?"
+        },
+        {
+          "user": "How about tomorrow at 2 PM?",
+          "expected_assistant": "Perfect! I've scheduled a demo for tomorrow at 2 PM. You'll receive a confirmation email with the meeting link shortly."
+        }
+      ]
+    }
+  ]
+}
+
